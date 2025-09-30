@@ -1,31 +1,34 @@
-# README - Sudoku Solver en C
+# 🧩 Sudoku Solver en C  
 
-## Description
-
-Ce programme est un petit jeu de **Sudoku** en C.
-Il permet à l’utilisateur de :
-
-* Saisir une grille de Sudoku **incomplète** ligne par ligne (0 pour case vide).
-* Afficher la grille telle qu’elle a été saisie.
-* Résoudre automatiquement le Sudoku (si une solution existe).
-* Afficher la grille **complétée** avec une mise en forme lisible.
-
-Le programme utilise un **algorithme de backtracking** pour résoudre le Sudoku.
+![Preview](img/preview.gif)
 
 ---
 
-## Fonctionnalités
+## 📖 Description
 
-* Lecture de la grille **ligne par ligne**.
-* Vérification que chaque chiffre est valide avant placement.
-* Affichage des grilles avec séparation des blocs 3x3 pour une meilleure lisibilité.
-* Indique si la grille n’a **aucune solution possible**.
+Ce projet est un petit jeu de **Sudoku en C**, pensé pour l’apprentissage et la pratique des algorithmes.  
+Il permet de :  
+
+✅ Saisir une grille **incomplète** ligne par ligne (0 = case vide).  
+✅ Afficher la grille telle qu’elle a été saisie.  
+✅ Résoudre automatiquement le Sudoku (si une solution existe).  
+✅ Afficher la grille **complétée** avec une mise en forme lisible.
+---
 
 ---
 
-## Exemple d’utilisation
+## ✨ Fonctionnalités
 
-### Saisie d’une grille
+- 📥 Lecture de la grille **ligne par ligne**.  
+- ✅ Vérification de la validité de chaque chiffre avant placement.  
+- 🖼️ Affichage clair des grilles avec séparation des blocs 3x3.  
+- 🚫 Détection et indication si la grille est **impossible à résoudre**.  
+
+---
+
+## 🕹️ Exemple d’utilisation
+
+### 🔹 Saisie d’une grille
 
 ```
 Entrez votre grille de Sudoku ligne par ligne (9 chiffres par ligne, 0 pour vide) :
@@ -68,20 +71,21 @@ Ligne 3 : 098000060
 ```
 
 ---
+## ⚙️ Prérequis
 
-## Prérequis
-
-* **Compilateur C** (GCC recommandé).
-* Windows : via **MSYS2 MinGW 64-bit** ou MinGW-w64.
-* Linux / macOS : GCC déjà installé ou via `sudo apt install build-essential` (Linux) ou `xcode-select --install` (macOS).
+- Un **compilateur C** (GCC recommandé).  
+- Windows : via **MSYS2 MinGW 64-bit** ou MinGW-w64.  
+- Linux / macOS :  
+  - Linux → `sudo apt install build-essential`  
+  - macOS → `xcode-select --install`  
 
 ---
 
-## Compilation et exécution
+## 🚀 Compilation et exécution
 
-1. Ouvrir un terminal (MSYS2 MinGW 64-bit sous Windows).
-2. Placer le fichier `Sudoku.c` dans le dossier souhaité.
-3. Compiler le programme :
+1. Ouvrir un terminal (ex. MSYS2 MinGW 64-bit sous Windows).  
+2. Placer le fichier `Sudoku.c` dans le dossier souhaité.  
+3. Compiler le programme :  
 
 ```bash
 gcc Sudoku.c -o Sudoku.exe
